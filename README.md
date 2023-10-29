@@ -77,21 +77,7 @@
     <img src="images/mainScreen.png" alt="main-screen" width = 700>
 </div>
 
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+A dictionary is a popular application to help users look up the meanings of words. In dictionary app, there are some several basics tasks such as searching a word, adding a new word, updating a word, $\dots$ . With a developer, in small data sets, there are many ways to solve the basic tasks above, for example using vector or array to save all words and search them. However, in a big data sets, it might compose lots of memories to save all word and lots of time to search our keyword. A common way to solve this problem is to use Trie data structure to save the list of words in a tree with memory: **256 childrens for a node** which is better than using vector. But it still contains too much spaces to save the tree. To address this problems, our team will use a data structure to save all words in a tree with only 3 childrens for a node: Tenary Search Tree.
 
 ### Built With
 
