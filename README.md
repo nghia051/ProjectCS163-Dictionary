@@ -23,7 +23,7 @@
 <br />
 <div align="center">
   <a>
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/voicon.png" alt="Logo" width="90" height="90">
   </a>
 
   <h3 align="center">VoiCon Dictionary</h3>
@@ -77,24 +77,9 @@
     <img src="images/mainScreen.png" alt="main-screen" width = 700>
 </div>
 
-A dictionary is a popular application to help users look up the meanings of words. In dictionary app, there are some several basics tasks such as searching a word, adding a new word, updating a word, $\dots$ . With a developer, in small data sets, there are many ways to solve the basic tasks above, for example using vector or array to save all words and search them. However, in a big data sets, it might compose lots of memories to save all word and lots of time to search our keyword. A common way to solve this problem is to use Trie data structure to save the list of words in a tree with memory: **256 childrens for a node** which is better than using vector. But it still contains too much spaces to save the tree. To address this problems, our team will use a data structure to save all words in a tree with only 3 childrens for a node: Tenary Search Tree.
-
-### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+A dictionary is a popular application to help users look up the meanings of words. In dictionary app, there are some several basics tasks such as searching a word, adding a new word, updating a word, $\dots$ . With a developer, in small data sets, there are many ways to solve the basic tasks above, for example using vector or array to save all words and search them. However, in a big data sets, it might compose lots of memories to save all word and lots of time to search our keyword. A common way to solve this problem is to use Trie data structure to save the list of words in a tree with memory: **256 childrens for a node** which is better than using vector. But it still contains too much spaces to save the tree. To address this problems, our team will use a data structure to save all words in a tree with **only 3 childrens for a node: Tenary Search Tree.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
