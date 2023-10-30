@@ -29,7 +29,7 @@
   <h3 align="center">VoiCon Dictionary</h3>
 
   <p align="center">
-    Developed by Team <i>Con Voi</i>: </br>
+    Developed by Team <i>Con Voi</i> from HCMUS: </br>
     Dang Trung Nghia
     </br>
     Tran Tuan Viet
@@ -49,23 +49,10 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#data-structure">Data structure</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -81,125 +68,141 @@ A dictionary is a popular application to help users look up the meanings of word
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+### Menu
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+<div align="center">
+    <img src="images/Menu.jpg" width = 700>
+</div>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- **Home**: home Screen
+- **Favorites list**: list of words that have been added to the favorites list
+- **Search history**: show search history
+- **Game**: play games with the dictionary
+- **Add new word**: add a new word to dataset
+- **Reset to original state**: reset dataset to original state
 
+### Home
 
+<div align="center">
+    <img src="images/home.png" width = 700>
+</div>
 
-<!-- ROADMAP -->
-## Roadmap
+The suggestion when searching for a word can be processed effectively using Ternary Search Tree:
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+<div align="center">
+    <img src="images/suggestWord.png" width = 700>
+</div>
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+Can edit the definition of a word, add word to favorites list, or remove word from the dataset:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+<div align="center">
+    <img src="images/Insearch.png" width = 700>
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Favorites list
 
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+<div align="center">
+    <img src="images/favoritesScreen.png" width = 700>
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Search history
+
+<div align="center">
+    <img src="images/history.png" width = 700>
+</div>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Game
+
+There are 2 game modes:
+
+- **Game mode 1**: given a word and choose its correct definition
+- **Game mode 2**: given a definition and choose its corresponding word
+
+<div align="center">
+    <img src="images/Game.png" width = 700>
+</div>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Add new word
+
+Add a new word with 3 definitions: 
+
+<div align="center">
+    <img src="images/AddWord.png" width = 700>
+</div>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Reset dataset
+
+Can reset the dataset to its original state (when open the dictionary) if don't want to save the changes.
+
+<div align="center">
+    <img src="images/reset.png" width = 700>
+</div>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Data structure
+
+Ternary Search Tree is a special Trie data structure where the child nodes of a standard trie are ordered as a binary search tree.
+
+Unlike Trie (standard) where each node may contains 256 pointers (all characters in ASCII table) for its children, each node in a ternary search tree contains only 3 pointers:
+
+- The left pointer points to the node whose value is less than the value in the current node.
+- The equal (middle) pointer points to the node whose value is equal to the value in the current node.
+- The right pointer points to the node whose value is greater than the value in the current node.
+
+The equal pointer is the pointer that points to the next character in the word.
+
+Each node has a field to store a character and another field to mark the end of word.
+
+Each node is designed as this:
+
+```C++
+struct Node {
+    char data; // the character in a node
+    int EOS = 1; // is end of string or not
+    Node* left, * middle, * right; // 3 children of a node
+    vector <string> listDef; // list of definitions if this node is end of a keyword
+}
+```
+
+<div align="center">
+    <img src="images/tst.png">
+</div>
+
+For instance, the image above show the visualization of a tenary search tree with string: "cute","cup","at","as","he","us" and "i".
+
+The advantage of using Tenary Search Tree is more space efficient (only 3 pointers per nodes compare to 256 in Trie).
+
+The following is an analysis of 5 basic functions used in the application:
+
+<div align="center">
+    <img src="images/analysis.png" width = 700>
+</div>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Dang Trung Nghia - dtnghia.forwork@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+Tran Tuan Viet - ttviet2805@gmail.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
