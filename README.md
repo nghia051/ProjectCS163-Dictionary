@@ -60,6 +60,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+
 <div align="center">
     <img src="images/mainScreen.png" alt="main-screen" width = 700>
 </div>
@@ -85,6 +86,13 @@ A dictionary is a popular application to help users look up the meanings of word
 - **Reset to original state**: reset dataset to original state
 
 ### Home
+
+Currently the dictionary has 4 datasets:
+
+- English to Vietnamese
+- Vietnamese to English
+- Slang in English
+- Emoji
 
 <div align="center">
     <img src="images/home.png" width = 700>
