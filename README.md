@@ -72,8 +72,6 @@ A dictionary is a popular application to help users look up the meanings of word
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-### Menu
-
 <div align="center">
     <img src="images/Menu.jpg" width = 700>
 </div>
@@ -84,80 +82,6 @@ A dictionary is a popular application to help users look up the meanings of word
 - **Game**: play games with the dictionary
 - **Add new word**: add a new word to dataset
 - **Reset to original state**: reset dataset to original state
-
-### Home
-
-Currently the dictionary has 4 datasets:
-
-- English to Vietnamese
-- Vietnamese to English
-- Slang in English
-- Emoji
-
-<div align="center">
-    <img src="images/home.png" width = 700>
-</div>
-
-The suggestion when searching for a word can be processed effectively using Ternary Search Tree:
-
-<div align="center">
-    <img src="images/suggestWord.png" width = 700>
-</div>
-
-Can edit the definition of a word, add word to favorites list, or remove word from the dataset:
-
-<div align="center">
-    <img src="images/Insearch.png" width = 700>
-</div>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Favorites list
-
-<div align="center">
-    <img src="images/favoritesScreen.png" width = 700>
-</div>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Search history
-
-<div align="center">
-    <img src="images/history.png" width = 700>
-</div>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Game
-
-There are 2 game modes:
-
-- **Game mode 1**: given a word and choose its correct definition
-- **Game mode 2**: given a definition and choose its corresponding word
-
-<div align="center">
-    <img src="images/Game.png" width = 700>
-</div>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Add new word
-
-Add a new word with 3 definitions: 
-
-<div align="center">
-    <img src="images/AddWord.png" width = 700>
-</div>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Reset dataset
-
-Can reset the dataset to its original state (when open the dictionary) if don't want to save the changes.
-
-<div align="center">
-    <img src="images/reset.png" width = 700>
-</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
